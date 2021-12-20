@@ -1,0 +1,55 @@
+{% extends 'home/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div>
+    <a href = "{% url 'post-collection' %}" class = 'btn btn-light'>Home</a>
+</div>
+
+<div> 
+    {% if profile.displaypic %}
+    <img src="{{profile.displaypic.url}}" class="rounded-circle" width="100" height="100" >
+    {% endif %}
+    <div>
+        {{profile.firstname}} 
+        {% if profile.lastname %}
+            {{profile.lastname}}
+        {% endif %}
+    </div>
+    <span>
+        {% if request.user == user %}
+        <a href = "{% url 'edit-user-profile' profile.pk %}">Edit</a>
+        {% endif %}
+    </span>
+
+    <div>
+        {% if profile.birthdate %}
+            {{profile.birthdate}}
+        {% endif %}  
+    </div>
+
+    <div>
+        {% if profile.city %}
+            {{profile.city}}
+        {% endif %}   
+    
+        {% if profile.country %}
+            {{profile.country}}
+        {% endif %} 
+    </div>
+
+    <div>
+        {% if profile.bio %}
+            {{profile.bio}}
+        {% endif %}
+    </div>
+
+
+</div>
+
+{% for post in postlist %}
+<div>
+    <p><strong><a href="{% url 'user-profile' post.author.pk %}">{{ post.author }} </a> </strong> {{ post.post_timestamp }}</p>
+    <p>{{ post.post_content }}</p>
+</div>
+{% endfor %}
+{% endblock content %}

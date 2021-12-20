@@ -1,0 +1,39 @@
+{% extends 'home/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<a href="{% url 'post-collection' %}">Home</a>
+<div>
+    <p><strong><a href="{% url 'user-profile' post.author.pk %}">{{ post.author }} </a> </strong>{{ post.post_timestamp }}</p>
+    <p>{{ post.post_content }}</p>
+    {% if request.user == post.author %}
+        <a href = "{% url 'post-edit' post.pk %}">Edit</a> 
+        <a href = "{% url 'post-delete' post.pk %}">Delete</a> 
+    {% endif %}
+</div>
+
+<h5>Add a Comment</h5>
+
+<div>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <div>
+                <button class="btn btn-success mt-3">Submit</button>
+            </div>
+        </form>
+    </div>
+    {%for comment in comments%}
+    <div>
+        <p><strong><a href="{% url 'user-profile' comment.author.pk %}">{{ comment.author }} </a> </strong>{{comment.comment_timestamp}} </p> 
+        <p> {{comment.comment}} </p>
+        {% if request.user == comment.author %}
+            <a href="{% url 'comment-delete' post.pk comment.pk %}">Delete</a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+

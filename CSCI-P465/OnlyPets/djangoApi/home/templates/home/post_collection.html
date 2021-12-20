@@ -1,0 +1,33 @@
+{% extends 'home/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class = 'container'>
+    <div class = "col-md-5 col-sm-12 border-bottom">
+    <form method='POST'>
+        {% csrf_token %}
+        {{ form | crispy }}
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    </div class = 'row justify-content-center mt-3 mb-5'>
+    {% for post in post_collection %}
+    <div class = "row justify-content-center mt-3">
+        <div class = 'col-md-5 col-sm-12 border-bottom position-relative'>
+            <p><strong><a href="{% url 'user-profile' post.author.pk %}">{{ post.author }} </a></strong>{{ post.post_timestamp }}</p>
+            <p><a href = "{% url 'post-detail' post.pk %}" class = "stretched-link">{{ post.post_content }}</a></p>
+        </div>
+    </div>
+    <div> 
+        <form method = 'POST' action = "{% url 'like' post.pk %}"> 
+            {% csrf_token %}
+            <input type = 'hidden' name = 'next' value = '{{request.path}}'>
+            <button type = "like"> Like </button>
+            <span> {{post.likes.all.count}} </span>
+        </form>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

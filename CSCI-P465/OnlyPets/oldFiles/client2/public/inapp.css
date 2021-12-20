@@ -1,0 +1,532 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+/*All pages using this css file*/
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+#logo{
+    width: 3%; /* you can use % */
+    margin-left: 20px;
+    /* height: auto; */
+
+}
+/* ---------------------------- Nav Bar ------------------------------------*/
+
+.entire-homepage{
+    width: 100%;
+    height: 100%;
+}
+/* Nav Bar Stuff */
+.navbar{
+
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    overflow: hidden;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+/* #logo{
+    width: 4%;
+} */
+
+
+#home{
+    color: grey;
+    font-size: medium;
+}
+#profile{
+    color: grey;
+    font-size: medium;
+}
+#settings{
+    color: grey;
+    font-size: medium;
+}
+#logout{
+    color: grey;
+    font-size: medium;
+}
+
+#notifications{
+    color: grey;
+    font-size: medium;
+
+}
+
+#messages{
+    color: grey;
+    font-size: medium;
+}
+
+.search-bar{
+    width: 250px;
+    margin-left: 730px;
+
+}
+.form-control{
+    margin-left: 120px;
+}
+
+.glyphicon.glyphicon-search{
+    margin-left: 140px;
+    color: grey;
+    font-size: medium;
+
+}
+
+/* ---------------------------- Nav Bar ------------------------------------*/
+/* ---------------------------- HOMEPAGE ------------------------------------*/
+
+.sec-nav-container{
+    display: flex;
+    background: white;
+    width: 240px;
+    height: 220px;
+    margin-left: 1150px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+
+
+}
+
+#quickNavText{
+    color: lightslategray;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+}
+
+#moreSettingsButtonGroup{
+    margin-left: -120px;
+    margin-top: 40px;
+
+}
+
+#profilePill{
+    background-color: rgb(255, 222, 222);
+    border: none;
+    color: black;
+    padding: 10px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+#settingsPill{
+    background-color: rgb(253, 245, 202);
+    border: none;
+    color: black;
+    padding: 10px 49px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+#pagesPill{
+    background-color: rgb(255, 223, 175);
+    border: none;
+    color: black;
+    padding: 10px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+#friendsPill{
+    background-color: rgb(242, 187, 123);
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+
+
+
+.status-container{
+    margin-top: -200px;
+}
+/* Status Update  */
+#postCard{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 2px;
+    box-shadow: inset;
+}
+
+.card-body{
+    margin: 0 auto;
+}
+
+#post_content{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#editContent{
+    margin: 0 450px 0 0;
+    border-right: none;
+    border-left: none;
+    border-color: #E8E8E8;
+
+
+}
+#postButton{
+    margin-left: 550px;
+    font-size: 11.5px;
+}
+
+
+.glyphicon.glyphicon-camera{
+    font-size: 20px;
+    padding: 10px;
+}
+.glyphicon.glyphicon-film{
+    font-size: 20px;
+    padding: 10px;
+   
+}
+
+.dropdown{
+    margin-left: 478px;
+    margin-bottom: -26.5px;
+}
+
+/* .chatting{
+    border: solid pink;
+    background-color: pink;
+    width: 300px;
+    height: 700px; 
+    margin: -220px 500px 250px 30px; top, right, bottom, left */
+
+.user-contacts-container{
+    margin-left: 30px;
+    margin-top: -250px;
+    background: rgb(224, 223, 223);
+    width: 300px;
+    height: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+#moreOptContactsButton{
+    margin-left: 273px;
+    margin-top: -65px;
+}
+
+#contactsText{
+    padding: 10px;
+}
+
+.user-friends-list{
+    padding: 15px;
+}
+
+.ads-container{
+    margin-left: 1150px;
+    margin-top: 30px;
+    background: rgb(241, 241, 241);
+    width: 240px;
+    height: flex;
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+#adTitleText{
+    color: lightslategray;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.internal-ad-container{
+    width: 240px;
+    height: 100px;
+    margin-top: -13px;
+    background: white;
+    border-radius: 10px;
+}
+
+.internal-ad-container #create-ad-navlink{
+    text-align: center;
+    white-space: normal;
+    padding: 30px;
+
+}
+
+.button-class #compose-message-button{
+    font-size: x-large;
+    margin-left: 20px;
+    margin-top: 25px;
+    background: white;
+    border-radius: 19px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+/* ---------------------------- HOMEPAGE ------------------------------------*/
+
+/* ---------------------------- Profile ------------------------------------ */
+
+.everythingButNavBar{
+    padding: 10px;
+}
+
+/* .profileSettings{
+    background-color: palegoldenrod;
+    height: 350px;
+} */
+
+.profile-container{
+    margin: 0 auto;
+    /* width: 800px;
+    height: 275px; */
+    padding: 20px 15%;
+    color: #626262;
+}
+.cover-img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+#coverphotobutton{
+    margin-top: -75px;
+    margin-left: 890px;
+}
+
+#contentCard{
+    margin-top: 15px;
+    height: 50px;
+}
+
+.profile-navbar{
+    display: inline-block;
+    width: 995px;
+}
+
+#profile-about{
+    margin: 0 auto;
+    /* margin-left: 20px; */
+    color: grey;
+    font-size: medium;
+}
+#profile-posts{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+} 
+#profile-friends{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+}
+#profile-photos{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+} 
+
+
+.profile-img{
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.profile-details{
+    color: #000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 200px;
+
+}
+/* #coverimagetext{
+    margin-left: 350px;
+    margin-top: 125px;
+} */
+
+ 
+ #bioCard{
+    width: 20%;
+} 
+
+.profiledetails-right button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.profiledetails-right button:first-child{
+    background: #e4e6eb;
+    color: #000;
+
+}
+.profiledetails-right button:nth-child(2){
+    background: #e4e6eb;
+    color: #000;
+
+}
+.profiledetails-right button:last-child{
+    background: #e4e6eb;
+    color: #000;
+
+}
+.post-col{
+    width: 160%;
+    margin-right: 170px;
+
+}
+
+.post-col #dropdownMenuButton{
+    margin-left:100px;
+    margin-bottom: 30px;
+}
+
+.post-col #publishPostButton{
+    margin-left: 650px;
+    margin-top: -48px;
+}
+/* ---------------------------- Profile ------------------------------------ */
+/* ---------------------------- Profile: About ------------------------------------ */
+
+#AboutCard{
+    width: 375px;
+    height: 275px;
+}
+
+#IntroCard{
+    margin-right: 200px;
+    width: 600px;
+    height: 275px;
+}
+/* 
+#MoreCard{
+    margin-right: 700px;
+
+
+} */
+.profiledetails-bottom #AnotherBioCard{
+    width: 1000px;
+    height: 300px;
+    margin-left: 220px;
+}
+/* ---------------------------- Profile: About ------------------------------------ */
+/* ---------------------------- Settings: General Settings ------------------------------------*/
+.settings-container{
+    padding: 20px;
+}
+.settings-container #settings-container-background{
+    margin-left:525px;
+    width: 800px;
+    height: 700px;
+}
+
+
+.settings-options-container #settings-options-background{
+    margin-top: -745px;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+}
+
+.full-settings-container{
+    align-items: center;
+}
+
+#settingHeader{
+    margin: 0 auto;
+}
+
+#settingsButtonGroup{
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Settings buttons: pill1 (General), pill2 (Privacy),
+ pill3 (Blocking), pill4 (Notifications) */
+#pill1{
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 53px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+      }
+#pill2{
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 53px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+      }
+#pill3{
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+      }
+#pill4{
+        background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+    
+      }
+
+/* ---------------------------- Settings: General Settings ------------------------------------*/
+

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>OnlyPets Homepage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="inapp.css" rel="stylesheet">
+  <script src="in-app.js"></script>
+
+</head>
+
+<body>
+
+  <main class="entire-homepage">
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="logoWithBorder.png" alt="Logo" class=logo id="logo">
+        <a class="nav-link glyphicon glyphicon-home" href="homepage.html" id="home"><span class="sr-only"></span></a>
+        <a class="nav-link glyphicon glyphicon-user" href="profile.html" id="profile"> <span class="sr-only"></span></a>
+        <a class="nav-link glyphicon glyphicon-wrench" href="settings.html" id="settings"><span
+            class="sr-only"></span></a>
+        <a class="nav-link glyphicon glyphicon-bell" href="#" id="notifications"> <span class="sr-only"></span></a>
+        <a class="nav-link glyphicon glyphicon-envelope" href="messages.html" id="messages"> <span
+            class="sr-only"></span></a>
+        <a class="nav-link glyphicon glyphicon-log-out" href="index.html" id="logout"><span class="sr-only"></span></a>
+
+
+        <div class="search-bar">
+          <input id="search" type="search" class="form-control" />
+        </div>
+
+        <a href="search.html"><span class="glyphicon glyphicon-search"></span></a>
+
+      </nav>
+    </div>
+
+    <!-- "side nav bar" -->
+    <div class="secondNav">
+      <div class="sec-nav-container">
+        <h3 id="quickNavText">Quick Navigation...</h3>
+        <div class="btn-group-vertical" id="moreSettingsButtonGroup">
+          <button class="button" id="profilePill">Profile</button>
+          <button class="button" id="settingsPill">Settings</button>
+          <button class="button" id="pagesPill">Pages</button>
+          <button class="button" id="friendsPill">Friends</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- new post : using cards -->
+    <div class="status-container">
+      <div class="card w-50 shadow p-3 mb-5 bg-white rounded" id="postCard">
+
+        <div class="card-body">
+          <h5 class="card-title" id="cardTitle">*Input Username Here</h5>
+
+          <div class="col-xs-12" id="post_content">
+            <div class="textarea_wrap"> <textarea class="col-xs-11" placeholder="What's on your mind?"
+                id="editContent"></textarea> </div>
+          </div>
+
+          <a href="#"><span class="glyphicon glyphicon-camera" id="importPhoto"></span></a>
+          <a href="#"><span class="glyphicon glyphicon-film" id="importVideo"></span></a>
+
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Privacy
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Only Me</a>
+              <a class="dropdown-item" href="#">Everyone</a>
+              <a class="dropdown-item" href="#">Friends Only</a>
+            </div>
+          </div>
+          <button href="#" id="postButton" class="btn btn-primary">Publish</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- User's Friends List -->
+    <div class="user-contacts-container">
+      <h5 id="contactsText">Contacts</h5>
+      <button class="btn glyphicon glyphicon-option-horizontal" id="moreOptContactsButton"></button>
+      <div class="user-friends-list">
+        <li>Friend 1</li>
+        <li>Friend 2</li>
+        <li>Friend 3</li>
+        <li>Friend 4</li>
+        <li>Friend 5</li>
+        <li>Friend 6</li>
+        <li>Friend 8</li>
+        <li>Friend 9</li>
+      </div>
+
+
+    </div>
+
+    <!-- For ads (<br> = filler for now) -->
+    <div class="ads-container">
+      <h5 id="adTitleText">Advertisements</h5>
+      <div class="internal-ad-container">
+        <a class="nav-link" href="profile-about.html" id="create-ad-navlink">Create your own ad!<br> (Rates and
+          restrictions apply)</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+    </div>
+
+    <div class="messenger-container">
+      <div class="button-class">
+        <button class="btn glyphicon glyphicon-edit" id="compose-message-button"></button>
+      </div>
+    </div>
+
+
+
+    <!-- JS Alert for logout is clicked (logs user out of system) -->
+    <!-- JS for publishing status -->
+
+
+
+  </main>
+
+
+
+</body>
+
+</html>

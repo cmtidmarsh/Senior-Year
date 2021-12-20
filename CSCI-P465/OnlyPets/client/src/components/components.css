@@ -1,0 +1,1661 @@
+/*
+should not put all the css in one file, but react compiles it all into one file anyway
+now it is easier to see if the css is having side effects and affecting elements it is not meant to
+*/
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+/* ---------------------------- Stuff from index.css ------------------------------------*/
+
+/*
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+*/
+
+/* Should help with two-toned homepage */
+/* background-repeat: repeat-y; */
+/* ---------------------------- Login Page ------------------------------------*/
+
+
+#logoLogin{
+
+  margin-top: 100px;
+  margin-right: 40px;
+
+}
+.loginNavbar{
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	overflow: hidden;
+	width: 100%; 
+	margin: 0 auto;
+	padding: 0;
+  }
+  
+
+  /* all content on page (login page) */
+  .loginMain {
+	/* css from main element that was transfering to main in related components*/
+	background-color: #f5f5f5;
+	background-image: url("../assests/pawPrintBackground.jpg");
+	background-repeat: repeat-y;
+	background-size: 50% auto;
+	
+	padding: 40px 0 40px 0;
+	margin: 0 auto;
+	display: flex;
+  
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+  
+	/* stuff from .form-resetPassword*/
+	justify-content: center;
+	float: right;
+	position: relative;
+  
+	flex-direction: row;
+  }
+  
+  /* Remebering the user */
+  .loginMain .checkbox {
+	font-weight: 400;
+	margin-left: 40px;
+  }
+  
+  .loginMain .loginMain:focus-within {
+	z-index: 2;
+  }
+  
+  /* signin email input  */
+  .loginMain input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 20;
+	border-bottom-left-radius: 50;
+  }
+  /* signin password input */
+  .loginMain input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 20;
+	border-top-right-radius: 50;
+  }
+  
+  /* signin section */
+  .form-signin{
+	background-color: #f5f5f5;
+	float: left;
+	border: 2px solid #e6e6e6;
+	border-radius: 50px 15px;
+	width: 400px;
+	padding: 15px;
+	margin: auto;
+	margin-left: 50px;
+  
+  }
+  
+  /* login content spacing */
+  .form-login {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	
+  }
+  /* login button formatting */
+  #loginButton{
+	width: 50%;
+	margin-left: 86px;
+	margin-top: 0px;
+	padding: 5px;
+  
+  }
+  /*  login forgot password button */
+  #forgotPasswordButton{
+	width: 40%;
+	margin-left: 170px;
+	margin-top: -170px;
+	padding: 5px;
+  
+  }
+
+  
+  /* registration section */
+  .form-registration{
+	margin: 150px 60px 0 0; /* top, right, bottom, left */
+	border-radius: 15px 50px; 
+	width: 500px;
+	/* padding: 20px; */
+  
+  }
+  
+  #security_q{
+	width: 60%;
+  }
+  /* registration button formatting */
+  .form-registration button{
+	width: 50%;
+	margin-left: 86px;
+	margin-top: 50px;
+	padding: 5px;
+	
+  }
+  /* registration content spacing */
+  .form-reg {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+  }
+  
+  /* ---------------------------- Login Page ------------------------------------*/
+  
+  /* ---------------------------- Reset Password Page ------------------------------------*/
+  /* OnlyPets logo */
+  .logo{
+	margin: 0px 100px 50px 70px; /* top, right, bottom, left */
+	width: 65%;
+  }
+  
+  /* Forgot Password : Logo */
+  #forgotPassword-logo{
+	/* width: 500px; */
+	/* padding: 20px; */
+	margin: 50px 200px 400px 0;
+	padding: 20px;
+	/* margin: 55px 750px 0 30px;  */
+  }
+  
+  /* Forgot Password: entire form */
+  .forgotPasswordForm{
+	margin: 250px -200px 400px 0;
+    padding: 20px;
+  }
+  /* Forgot Password: title */
+  #forgotPassTitle{
+	padding-bottom: 10px;
+  
+  }
+  /* Forgot Password: button */
+  .forgotButton{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	bottom: 300px;
+	padding-top: 10px;
+  }
+  /* Forgot Password: button */
+  #forgotPassButton{
+	margin-top: 20px;
+	margin-left: 40px;
+  }
+  
+  /* reset password: logo */
+  #resetPassword-logo{
+	padding: 20px;
+	margin: 55px 750px 0 30px;
+	width: 600px;
+  }
+  
+  /* Reset Password: entire form */
+  #resetPassword-form{
+	margin: 200px 300px 0 -300px;
+	padding: 30px;
+  }
+  
+  /* #resetPasswordshit{
+	margin: 200px 400px 0 300px;  /* top, right, bottom, left */
+	/* padding: 20px;
+  } */
+  /* ---------------------------- Reset Password Page ------------------------------------*/
+
+/* ---------------------------- Starting In App ------------------------------------*/
+/*All pages using this css file*/
+main{
+    height: auto;
+    width: auto;
+    background-color: #f5f5f5;
+    /* background-repeat: repeat-y; */
+    /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055); */
+    /*
+    display: flex;
+    align-items: center;
+    */
+
+}
+.darkMode{
+  background-color: black;
+  /* color: white; */
+}
+
+.lightMode{
+  background-color: white;
+}
+
+/* #logo{
+    width: 3%; /* you can use % */
+    /* margin-left: 20px; */
+    /* height: auto; */
+/* ---------------------------- Nav Bar ------------------------------------*/
+
+/* Nav Bar Stuff */
+.navbar{
+  width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    overflow: hidden;
+    width: auto;
+    height: 60px;
+    margin: 0 auto; /* top, right, bottom, left */
+    margin-top: -1px;
+    position: fixed;
+
+}
+
+#navBarTextLogo {
+    width: 8%;
+}
+
+/* #logo{
+    width: 4%;
+} */
+
+
+#home{
+    color: grey;
+    font-size: large;
+}
+#profile{
+    color: grey;
+    font-size: large;
+}
+#settings{
+    color: grey;
+    font-size: large;
+}
+#logout{
+    color: grey;
+    font-size: large;
+}
+
+#notifications{
+    color: grey;
+    font-size: large;
+
+}
+
+#messages{
+    color: grey;
+    font-size: medium;
+}
+
+.search-bar{
+    width: 250px;
+    margin-left: 720px;
+
+}
+.form-control{
+    margin-left: 100px;
+}
+
+.glyphicon.glyphicon-search{
+    margin-left: 75px;
+    color: grey;
+    font-size: large;
+
+}
+
+/* ---------------------------- Nav Bar ------------------------------------*/
+/* ---------------------------- HOMEPAGE ------------------------------------*/
+
+
+.entireHomepage{
+  transition: background-color .2s;
+  /* width: 100%;
+  height: 100%; */
+  width: auto;
+  height: auto;
+}
+
+.lightModeButton3-container{
+  margin-left: -350px;
+}
+
+.entireHomepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entireHomepage[light-mode="dark"] .light-mode-button3 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entireHomepage[light-mode=dark] .light-mode-button3 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+.sec-nav-container{
+    display: flex;
+    background: #ffffff;;
+    width: 240px;
+    height: 220px;
+    margin-left: 1150px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+    #statusHeaderText{
+        margin: 30px 0 -20px 390px; /* top, right, bottom, left */
+        margin-top: 30px;
+        font-family: "monoco", monospace;
+        font-size: xx-large;
+
+    }
+
+#quickNavText{
+    color: rgb(73, 73, 73);
+    font-family: "monoco", monospace;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+}
+
+#moreSettingsButtonGroup{
+    margin-left: -120px;
+    margin-top: 40px;
+}
+
+#profilePill{
+   width: 90%;
+    background-color: rgb(255, 222, 222);
+    border: none;
+    color: black;
+    font-weight: bold;
+    /* font-style: oblique;
+    font-style:inherit; */
+    font-family: "Monaco", monospace;
+    padding: 10px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+}
+#profilePill:hover{
+  background-color: rgb(250, 233, 233);
+
+}
+#settingsPill{
+    /* background-color: rgb(253, 245, 202); */
+    width: 90%;
+    background-color: rgb(236, 222, 255);
+    font-weight: bold;
+    font-family: "Monaco", monospace;
+    border: none;
+    color: black;
+    padding: 10px 49px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+}
+#settingsPill:hover{
+  background-color: rgb(246, 240, 255);
+
+}
+#pagesPill{
+    background-color: rgb(225, 222, 255);
+    border: none;
+    color: black;
+    font-weight:bold;
+    font-family: "Monaco", monospace;
+    padding: 10px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+}
+
+#pagesPill:hover{
+  background-color: rgb(240, 239, 255);
+
+}
+
+#friendsPill{
+    background-color: rgb(200, 204, 253);
+    width: 95%;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Monaco", monospace;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+}
+
+#friendsPill:hover{
+  background-color: rgb(228, 230, 253);
+
+}
+
+.status-container{
+  width: 80%;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 100px;
+  /* margin-right: 700px; */
+  /* margin-right: 900px; */
+
+}
+/* Status Update  */
+#postCard{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 2px;
+    box-shadow: inset;
+}
+
+.card-body{
+    margin: 0 auto;
+}
+
+#cardTitle{
+  margin-top: -10px;
+  font-weight: bold;
+  font-family: "monoco", monospace;
+}
+
+#post_content{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#editContent{
+    margin: 0px 450px 0 0;
+    border-right: none;
+    border-left: none;
+    border-color: #E8E8E8;
+
+
+}
+#postButton{
+    /* margin-left: 570px; */
+    /* margin-right: 700px; */
+    font-family: "monoco", monospace;
+    margin-left: 425px;
+    margin-top: -8px;
+    font-size: 10px;
+    display: block;
+    width: 60px;
+    border-radius: 30px;
+    background-color:rgb(247, 228, 247);
+    border-color: rgb(247, 228, 247);
+    color: black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.likeCommentButton-Container{
+}
+
+#likeButton{
+  margin-right: 300px;
+  margin-top: 50px;
+  font-size: 15px;
+  color:rgb(250, 156, 156);
+  border-color:rgb(250, 156, 156);;
+  display: inline-block;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+
+
+
+}
+#commentButton{
+  margin-left: 30px;
+  font-size: 15px;
+  border-radius: 30px;
+  color: rgb(214, 151, 250);
+  border-color: rgb(214, 151, 250);;
+  display: show;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.uploadButton-Container{
+}
+
+#uploadButton{
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+  border-radius: 30px;
+  color: rgb(214, 151, 250);
+  border-color: rgb(214, 151, 250);;
+  display: show;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+
+.dropdown{
+    margin-left: 478px;
+    margin-bottom: -26.5px;
+    
+}
+
+#dropdownMenuButton{
+  border-radius: 30px;
+  background-color: #c3dbfc;
+  border-color: #c3dbfc;
+  color: black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  font-family: "monoco", monospace;
+}
+
+
+
+.user-contacts-container{
+    margin-left: 30px;
+    margin-top: -220px;
+    background: rgb(255, 252, 252);
+    width: 300px;
+    height: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+#moreOptContactsButton{
+    margin-left: 273px;
+    margin-top: -65px;
+}
+
+#contactsText{
+    padding: 10px;
+    font-weight: bold;
+    font-family: "monoco", monospace;
+}
+
+.user-friends-list{
+    padding: 15px;
+    list-style-type: none;
+    font-weight: bold;
+    font-family: "monoco", monospace;
+}
+
+.ads-container{
+    margin-left: 1150px;
+    margin-top: -1100px;
+    background: rgb(241, 241, 241);
+    width: 240px;
+    height: flex;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+#adTitleText{
+    color: lightslategray;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.internal-ad-container{
+    width: 240px;
+    height: 100px;
+    margin-top: -13px;
+    background: white;
+    border-radius: 10px;
+}
+
+.internal-ad-container #create-ad-navlink{
+    text-align: center;
+    white-space: normal;
+    padding: 30px;
+
+}
+
+.button-class #compose-message-button{
+    font-size: x-large;
+    /* margin: 700px 0 0 0; top, right, bottom, left */
+    margin-bottom: auto;
+    background: white;
+    border-radius: 19px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+
+
+ 
+
+/* ---------------------------- HOMEPAGE ------------------------------------*/
+
+/* ---------------------------- Profile ------------------------------------ */
+
+/* .profileSettings{
+    background-color: palegoldenrod;
+    height: 350px;
+} */
+
+.entire-profilepage{
+  transition: background-color .2s;
+}
+
+.lightModeButton4-container{
+  margin-left: -350px;
+}
+
+.entire-profilepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entire-profilepage[light-mode="dark"] .light-mode-button4 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-profilepage[light-mode=dark] .light-mode-button4 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+.profile-container{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding: 20px 15%;
+    color: #626262;
+
+}
+.cover-img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+#coverphotobutton{
+    margin-top: -75px;
+    margin-left: 890px;
+    border-radius: 30px;
+    background-color: #97c4ff;
+    border: none;
+    color: black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+#contentCard{
+    margin-top: 15px;
+    height: 100px;
+    width: 30px;
+}
+
+#privacyButton{
+    margin: 20px 20px 20px 0; /* top, right, bottom, left */
+}
+
+
+#profilepublishPostButton{
+    margin: -28px 20px 0 550px; /* top, right, bottom, left */
+ }
+
+.profile-navbar{
+    display: inline-block;
+    width: 1005px;
+}
+
+#profile-about{
+    margin: 0 auto;
+    /* margin-left: 20px; */
+    color: grey;
+    font-size: medium;
+}
+#profile-posts{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+} 
+#profile-friends{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+}
+#profile-photos{
+    margin: 0 auto;
+    color: grey;
+    font-size: medium;
+} 
+
+
+.profile-img{
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.profile-details{
+    color: #000;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 200px;
+
+}
+/* #coverimagetext{
+    margin-left: 350px;
+    margin-top: 125px;
+} */
+
+ 
+ #bioCard{
+    width: 20%;
+} 
+
+.profiledetails-right button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.profiledetails-right button:first-child{
+    background: #e4e6eb;
+    color: #000;
+
+}
+.profiledetails-right button:nth-child(2){
+    background: #e4e6eb;
+    color: #000;
+
+}
+.profiledetails-right button:last-child{
+    background: #e4e6eb;
+    color: #000;
+
+}
+.post-col{
+    width: 80%;
+    margin-right: 200px;
+    
+
+}
+
+/* 
+.post-col #dropdownMenuButton{
+    margin-left:100px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+} */
+ #profileStatusDropdownMenuButton{
+   margin-left: 30px;
+   margin-bottom: 1px;
+   border-radius: 30px;
+   background-color: #c3dbfc;
+   border-color: #c3dbfc;
+   color: black;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+ }
+
+.post-col #publishPostButton{
+    margin-left: 650px;
+    margin-top: -48px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+#friendButton{
+    margin-left: 0px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+#friendButton:hover {
+  background: rgb(203, 255, 203);
+}
+#messageButton{
+    margin-left: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+#messageButton:hover {
+  background: rgb(203, 239, 255);
+}
+#profileBlockButton{
+    margin-left: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+#profileBlockButton:hover {
+  background: rgb(250, 182, 182);
+}
+/* ---------------------------- Profile ------------------------------------ */
+/* ---------------------------- Profile: About ------------------------------------ */
+
+.entire-profilepage{
+  transition: background-color .2s;
+}
+
+.lightModeButton5-container{
+  margin-left: -350px;
+}
+
+.entire-profilepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entire-profilepage[light-mode="dark"] .light-mode-button5 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-profilepage[light-mode=dark] .light-mode-button5 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+#AboutCard{
+    width: 375px;
+    height: 275px;
+}
+
+#AboutCardTitle{
+  font-family: "monoco", monospace;
+}
+
+#IntroCard{
+    margin-right: 200px;
+    width: 600px;
+    height: 275px;
+}
+
+#IntroCardTitle{
+  font-family: "monoco", monospace;
+}
+
+
+#editOverview{
+    margin-bottom:auto;
+    margin-left: 300px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+
+#editIntroButton{
+    background: #faf9f9;
+    margin-left: 500px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+
+}
+
+#overViewText{
+  font-size: large;
+  font-weight: bold;
+  font-family: "monoco", monospace;
+}
+#introText{
+  font-size: large;
+  font-weight: bold;
+  font-family: "monoco", monospace;
+
+}
+.profiledetails-bottom #AnotherBioCard{
+    width: 1000px;
+    height: 300px;
+    margin-left: 220px;
+}
+
+#profileCardButtonGroup{
+    padding: 20px;
+
+    
+}
+
+#bioPlacesButton{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-family: "monoco", monospace;
+
+
+
+}
+#bioPlacesButton:hover{
+  background-color: rgb(218, 228, 255);
+}
+
+#bioPlacesButton:focus{
+  background-color: rgb(192, 209, 255);
+}
+
+#bioWorkButton{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-family: "monoco", monospace;
+
+}
+
+#bioWorkButton:hover{
+  background-color: rgb(218, 228, 255);
+}
+
+#bioWorkButton:focus{
+  background-color: rgb(192, 209, 255);
+}
+
+#bioContactButton{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-family: "monoco", monospace;
+
+}
+
+#bioContactButton:hover{
+  background-color: rgb(218, 228, 255);
+}
+
+#bioContactButton:focus{
+  background-color: rgb(192, 209, 255);
+}
+
+.text-container{
+  margin-left:400px;
+  margin-top: -240px;
+  width: 550px;
+  height: 250px;
+}
+
+#placesText{
+  display: none;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 125px;
+  margin-top: 100px;
+  font-family: "monoco", monospace;
+
+
+}
+#workText{
+  display: none;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 125px;
+  margin-top: 100px;
+  font-family: "monoco", monospace;
+}
+
+#contactText{
+  display: none;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 125px;
+  margin-top: 100px;
+  font-family: "monoco", monospace;
+
+}
+/* ---------------------------- Profile: About ------------------------------------ */
+/* ---------------------------- Profile: Friends ------------------------------------ */
+
+.entire-profilepage{
+  transition: background-color .2s;
+}
+
+.lightModeButton6-container{
+  margin-left: -350px;
+}
+
+.lightModeButton5-container{
+  margin-left: -350px;
+}
+
+.entire-profilepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entire-profilepage[light-mode="dark"] .light-mode-button6 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-profilepage[light-mode=dark] .light-mode-button6 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+/* ---------------------------- Profile: Friends ------------------------------------ */
+
+.entire-profilepage{
+  transition: background-color .2s;
+}
+
+.lightModeButton7-container{
+  margin-left: -350px;
+}
+
+.lightModeButton5-container{
+  margin-left: -350px;
+}
+
+.entire-profilepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entire-profilepage[light-mode="dark"] .light-mode-button7 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-profilepage[light-mode=dark] .light-mode-button7 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+/* ---------------------------- Profile: Pictures ------------------------------------ */
+
+.entire-profilepage{
+  transition: background-color .2s;
+}
+
+.lightModeButton7-container{
+  margin-left: -350px;
+}
+
+.lightModeButton5-container{
+  margin-left: -350px;
+}
+
+.entire-profilepage[light-mode=dark]{
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+
+.entire-profilepage[light-mode="dark"] .light-mode-button7 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-profilepage[light-mode=dark] .light-mode-button7 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+/* ---------------------------- Profile: Pictures ------------------------------------ */
+/* ---------------------------- Settings: General Settings ------------------------------------*/
+
+
+.entireSettingsPage{
+  transition: background-color .2s;
+}
+
+.entireSettingsPage[light-mode=dark] {
+  background-color: #292929;
+  /* color: #ced4e2; */
+}
+
+
+.entireSettingsPage[light-mode="dark"] .light-mode-button span:nth-child(1){
+  background-color: #f5f5f5;
+  /* color: #141516; */
+}
+
+.entireSettingsPage[light-mode=dark] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+.settings-container{
+    padding: 20px;
+    /* margin: 0 auto; */
+}
+.settings-container #settings-container-background{
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+
+}
+.full-settings-container{
+    align-items: center;
+}
+#settingsHeaderText{
+    margin: 0 auto;
+    font-size: xx-large;
+    font-family: "monoco", monospace;
+
+}
+
+#customizeDisplayHeader{
+  font-family: "monoco", monospace;
+}
+
+#customizeDisplayText{
+  font-family: "monoco", monospace;
+}
+
+/* #customizeThemeSwitch{
+    margin-right: 450px;
+} */
+
+#darkModeSwitchText{
+    /* margin-left: 200px; */
+    font-weight: bold;
+    font-family: "monoco", monospace;
+}
+
+#blockedProfilesHeader{
+  font-family: "monoco", monospace;
+}
+#blockedProfilesText{
+  font-family: "monoco", monospace;
+}
+
+.searchBarBlockedPages-Container{
+    width: 35%;
+    /* height: 30%; */
+}
+
+.searchBarBlockedUsers-Container{
+    width: 35%;
+    /* height: 30%; */
+}
+
+#blockButton{
+    margin-left: 325px;
+    margin-top: -50px;
+    border-radius: 5px;
+    background-color: rgb(211, 6, 6);
+    border-color: rgb(211, 6, 6);
+}
+
+#blockedPagesHeader{
+  font-family: "monoco", monospace;
+}
+
+#blockedPagesText{
+  font-family: "monoco", monospace;
+}
+#profilePageText{
+    font-weight: bold;
+    font-family: "monoco", monospace;
+
+}
+
+#statusText{
+    font-weight: bold;
+    font-family: "monoco", monospace;
+
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 53px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider{
+    background-color: black;
+  }
+  
+
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  #onlyMePrivactySwitch{
+      margin-left: 25px;
+
+  }
+  #friendsPrivactySwitch{
+    margin-left: 25px;
+
+
+  }
+  #publicPrivactySwitch{
+    margin-left: 30px;
+
+  }
+
+#menu-toggle {
+    display: none;
+    width: 100px;
+    height: 400px;
+  }
+  
+  #collapse-menu {
+    transition: transform 0.3s;
+    transform-origin: top;
+  }
+  
+  input:not(:checked) ~ #collapse-menu {
+    transform: scaleY(0);
+  }
+
+  #privacyDropDown{
+      width: 5%;
+  }
+
+  .light-mode-button {
+    background:0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.light-mode-button:focus {
+    outline:none; /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100px;
+    height:40px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
+
+#privacySettingsText{
+  font-family: "monoco", monospace;
+}
+
+.statusToggle{
+  font-family: "monoco", monospace;
+}
+
+.profileToggle{
+  font-family: "monoco", monospace;
+}
+
+/* ---------------------------- Settings: General Settings ------------------------------------*/
+/* ---------------------------- Search ------------------------------------*/
+
+
+.entireSearchpage {
+  background-color: #f6f6f6;
+  transition: background-color .3s;
+}
+
+.lightModeButton2-container{
+  margin-left: -350px;
+}
+
+.entireSearchpage[light-mode=dark] {
+  background-color: #292929;
+  color: rgb(139, 140, 143);
+}
+
+.entireSearchpage[light-mode="dark"] .light-mode-button2 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entireSearchpage[light-mode=dark] .light-mode-button2 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+#serchPostCard{
+  margin-top: -300px;
+  margin-left: 350px;
+  height: 200px
+}
+.filter-container{
+  margin-top: -300px;
+}
+#filter-card-container{
+  width: 300px;
+  height: 400px;
+}
+
+
+
+
+/* ---------------------------- Search ------------------------------------*/
+
+/* ---------------------------- Messages ------------------------------------*/
+.entire-messagepage{
+  background-color: #f6f6f6;
+  transition: background-color .3s;
+}
+
+.lightModeButton9-container{
+  margin-left: -350px;
+}
+
+.entire-messagepage[light-mode=dark] {
+  background-color: #292929;
+  color: #868686;
+}
+
+.entire-messagepage[light-mode="dark"] .light-mode-button9 span:nth-child(1){
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+.entire-messagepage[light-mode=dark] .light-mode-button9 span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+.fullMessage-Container{
+  margin-top: 10px;
+  margin-left: 400px;
+  background-color: #e9e9e9;
+  border: solid;
+  border-style: double;
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color:rgb(218, 217, 217);
+  width:700px;
+  height: 700px;
+  box-shadow: 2px 2px 2px 1px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.composeMessage-Container{
+  position: absolute;
+  top: 625px;
+  left: 475px;
+  /* margin-top: 550px;
+  margin-left: 75px; */
+  /* position: absolute; */
+  /* margin-top: 500px;
+  margin-left: 200px; */
+  /* position: absolute;
+  top: 600px;
+  left: 500px; */
+}
+
+#composeMessageTextArea{
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.messageButtons{
+  position: absolute;
+  /* margin: 0 auto; */
+  /* margin-top: 10px; */
+  margin-left: 250px;
+  padding: 20px;
+  bottom: 4px;
+  /* position : absolute;
+  top: 600px;
+  left: 500px; */
+}
+
+#sendButton{
+  width: 100px;
+  border-radius: 4px;
+  border: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #91fffb;
+  /* background-color:#f3f3f3; */
+  background-color: #85d8ff;
+  color: black;
+  border: none;
+  font: bold;
+  font-family: "monoco", monospace;
+}
+
+#sendButton:hover{
+  /* background-color: #c7fcfa; */
+  background-color: #3cc0fd;
+}
+.fullUserFiltering-Container{
+  width: 300px;
+  position: absolute;
+  /* margin-left: 20px; */
+  top: 150px;
+  left: 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+#userFilteringTitle{
+  font: bolder;
+  font-family: "monoco", monospace;
+}
+.userFiltering-Container{
+  margin-top: 1px;
+  margin-left: 20px;
+  padding: 20px;
+  
+
+}
+#searchForUsersToMessage{
+  width: 200px;
+  border-radius: 20px;
+}
+
+#searchForUsersButton{
+  position: absolute;
+  left: 175px;
+  top: 48px;
+  border-radius: 30px;
+  font-size: small;
+}
+
+#myUL{
+  list-style-type: none;
+}
+
+.messageTitle-container{
+  width: 19%;
+  position: absolute;
+  bottom: 645px;
+  left: 50px;
+}
+
+#messageTitle{
+  font-size: 55px;
+  font-family: "monoco", monospace;
+}
+.allMessages-Container{
+  /* background-color: #c3c3ca; */
+}
+
+#detailsButtonMessages{
+  color:rgb(0, 0, 0);
+  border-radius: 30px;
+}
+
+.message{
+  font-family: "monoco", monospace;
+}
+.message:hover{
+  color:rgb(255, 255, 255);
+
+}
+
+#postedMessageHeader{
+  font-family: "monoco", monospace;
+}
+
+#detailsButtonMessages:hover{
+  color:rgb(161, 186, 253);
+  /* background-color: rgb(212, 223, 252); */
+}
+/* ---------------------------- Messages ------------------------------------*/
+/* ---------------------------- Posts.js ------------------------------------*/
+
+.likeCommentButton-Container{
+  margin-left: -25px;
+
+}
+#detailsButton{
+  /* background-color: rgb(255, 215, 170); */
+  background-color: rgb(238, 236, 236);
+  border-color: #89a2f7;
+  border-radius: 30px;
+  color: #bfccf8;
+}
+
+#detailsButton:hover{
+  color: #89a2f7;
+}
+#postedStatus{
+  margin-left: 395px;
+  margin-top: 20px;
+  /* margin-top: 150px; */
+  /* margin-bottom: -00px; */
+  font-family: "monoco", monospace;
+
+  padding: 10px;
+}
+
+#postedStatus:hover{
+  color: #6c8cf5;
+}
+
+/* .pubishedPosts{
+  margin-top: -200px;
+} */
+
+#removePostButton{
+  margin-left: 500px;
+  color: rgb(250, 101, 101);
+  border-color: rgb(250, 101, 101);
+  border-radius: 30px;
+}
+#removePostButton:hover{
+  color: rgb(202, 0, 0);
+
+}
+
+.publishedPosts{
+  margin-top: 150px;
+}
+#postedStatusHeader{
+  font-family: "monoco", monospace;
+}
+
+/* ---------------------------- Posts.js ------------------------------------*/
+

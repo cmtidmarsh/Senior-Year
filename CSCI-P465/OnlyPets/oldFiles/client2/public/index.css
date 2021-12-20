@@ -1,0 +1,196 @@
+
+/* whole webpage */
+body {
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+  background-color: #f5f5f5;
+  /* background-image: url("pawprintbackground.jpg");
+  background-position: 50% 0;
+  background-size: 50%; */
+  /* pawprint background */
+  height: 100%;
+  width: 100%;
+  background-image: url("pawPrintBackground.jpg");
+  background-repeat: repeat-y;
+  background-size: 50% auto;
+  object-fit: contain;
+
+}
+
+
+/* all content on page (homepage) */
+.form-homepage {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  flex-direction: row;
+}
+
+/* Remebering the user */
+.form-homepage .checkbox {
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.form-homepage .form-homepage:focus-within {
+  z-index: 2;
+}
+
+/* signin email input  */
+.form-homepage input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 20;
+  border-bottom-left-radius: 50;
+}
+/* signin password input */
+.form-homepage input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 20;
+  border-top-right-radius: 50;
+}
+
+
+/* signin section */
+.form-signin{
+  background-color: #f5f5f5;
+  float: left;
+  border: 2px solid #e6e6e6;
+  border-radius: 50px 15px;
+  width: 400px;
+  padding: 15px;
+  margin: auto;
+  margin-left: 50px;
+
+}
+
+/* login content spacing */
+.form-login {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  
+}
+/* login button formatting */
+#loginButton{
+  width: 50%;
+  margin-left: 86px;
+  margin-top: 0px;
+  padding: 5px;
+
+}
+/*  login forgot password button */
+#forgotPasswordButton{
+  width: 40%;
+  margin-left: 170px;
+  margin-top: -170px;
+  padding: 5px;
+
+}
+
+/* registration section */
+.form-registration{
+  margin: 40px 60px 0 0; /* top, right, bottom, left */
+  border-radius: 15px 50px; 
+  width: 500px;
+  /* padding: 20px; */
+
+}
+
+#security_q{
+  width: 60%;
+}
+/* registration button formatting */
+.form-registration button{
+  width: 50%;
+  margin-left: 86px;
+  margin-top: 50px;
+  padding: 5px;
+  
+}
+/* registration content spacing */
+.form-reg {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+/* OnlyPets logo */
+.logo{
+  margin: 50px 0 50px 70px; /* top, right, bottom, left */
+  width: 65%;
+}
+
+/* Forgot Password : Logo */
+#forgotPassword-logo{
+  /* width: 500px; */
+  /* padding: 20px; */
+  margin: 0 200px 400px 0;
+  padding: 20px;
+  /* margin: 55px 750px 0 30px;  */
+}
+
+/* Forgot Password: entire main class */
+.form-forgotPassword{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* width: 420px; */
+  padding: 10px;
+  float: right;
+  position: relative;
+  /* left: 400px; */
+  /* bottom: 270px; */
+  margin: 0 auto;
+
+}
+/* Forgot Password: entire form */
+.forgotPasswordForm{
+  margin: 250px -200px 400px 0;
+}
+/* Forgot Password: title */
+#forgotPassTitle{
+  padding-bottom: 10px;
+
+}
+/* Forgot Password: button */
+.forgotButton{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 300px;
+  padding-top: 10px;
+}
+/* Forgot Password: button */
+#forgotPassButton{
+  margin-top: 20px;
+  margin-left: 40px;
+}
+/* Reset Password: entire main class */
+.form-resetPassword{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  float: right;
+  position: relative;
+  margin: 0 auto;
+
+}
+/* reset password: logo */
+.resetPassword-logo{
+  padding: 20px;
+  margin: 55px 750px 0 30px; 
+}
+/* Reset Password: entire form */
+#resetPassword-form{
+  margin: 200px 300px 0 -300px;
+  padding: 30px;
+}
+
+
+/* #resetPasswordshit{
+  margin: 200px 400px 0 300px;  /* top, right, bottom, left */
+  /* padding: 20px;
+} */
