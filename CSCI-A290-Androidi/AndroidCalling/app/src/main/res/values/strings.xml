@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidCalling</string>
+    <string name="hello_universe_android_calling">Hello Universe!!! Android Calling!</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="new_font">New Font</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_1">Button 1</string>
+    <string name="switch2">Switch</string>
+    <string name="new_switch">New Switch</string>
+    <string name="my_first_switch">My First Switch</string>
+    <string name="first_button">First Button</string>
+    <string name="second_button">Second Button</string>
+</resources>
