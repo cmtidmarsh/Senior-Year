@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    From meeting guide 7:-->
+<!--    <color name="background">#3500ffff</color>-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    modified puzzle background color -->
+    <color name="puzzleBackground">#FFE6EE</color>
+    <color name="puzzleHiLite">#ffffffff</color>
+    <color name="puzzleLight">#64c6d4ef</color>
+    <color name="puzzleDark">#6456648f</color>
+    <color name="puzzleForeground">#ff000000</color>
+    <color name="puzzleSelected">#64ff8000</color>
+    <color name="puzzleHint0">#64ff0000</color>
+    <color name="puzzleHint1">#6400ff80</color>
+    <color name="puzzleHint2">#2000ff80</color>
+</resources>

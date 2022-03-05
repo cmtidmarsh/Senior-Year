@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">A290 Sudoku</string>
+    <string name="mainMenuTitle">Welcome to My Sudoku</string>
+    <string name="continueButton">Continue</string>
+    <string name="newButton">New Game</string>
+    <string name="exitButton">Exit</string>
+    <string name="aboutButton">About</string>
+    <string name="aboutTextView">Sudoku is a logic-based number placement puzzle. Starting with a partially completed 9x9 grid, the
+objective of the puzzle is to fill the remaining \”open\” tiles or spaces in the grid so that
+each row, each column, and each of the 3x3 boxes (also called blocks) contains the digits 1 to 9
+exactly once. HAVE FUN!</string>
+    <string name="aboutTitle">A290 Sudoku - About My First Real Application</string>
+    <string name="a290_android_spring_2022">A290 Android Spring 2022</string>
+
+    <string name="settingsTextView">Settings&#8230;</string>
+    <string name="settingsTitle">A290 First Real Application Settings</string>
+    <string name="settingsShortcut">s</string>
+    <string name="musicTitle">Music</string>
+    <string name="musicTextView">Play Background Music</string>
+    <string name="hintsTitle">Hints</string>
+    <string name="hintsTextView">Show Hints During Play</string>
+
+    <string name="newGameTitle">Difficulty Level</string>
+    <string name="easyTextView">Easy</string>
+    <string name="mediumTextView">Medium</string>
+    <string name="hardTextView">Hard</string>
+
+    <string name="gameTitle">Game</string>
+    <string name="noMovesTextView">No moves possible</string>
+    <string name="keypadTitle">Keypad</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ABAB3FB"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+<!--    tools:context=".MainActivity"-->
+<!--     From meeting guide 7:-->
+<!--       android:padding="30dp"-->
+<!--     android:background="@color/background"-->
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <!--            <!—Do not use this at this time.-->
+        <!--            <com.google.android.material.appbar.AppBarLayout-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:theme="@style/AppTheme.AppBarOverlay">-->
+        <!--            </com.google.android.material.appbar.AppBarLayout>-->
+        <!--            &ndash;&gt;-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/mainMenuTitle"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:background="#ABF6E7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/mainMenuTitle"
+        android:textAlignment="center"
+        android:textColor="#EC407A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ABF4F6"
+        android:text="@string/continueButton"
+        android:textColor="#1565C0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMenuTitle" />
+
+
+    <Button
+        android:id="@+id/newButton"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ABEBF6"
+        android:text="@string/newButton"
+        android:textColor="#616161"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ABDCF6"
+        android:text="@string/exitButton"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newButton" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#ABC9F6"
+        android:text="@string/aboutButton"
+        android:textColor="#3949AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitButton" />
+
+    <TextView
+        android:id="@+id/a290TextView"
+        android:layout_width="410dp"
+        android:layout_height="71dp"
+        android:background="#ABBBF6"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/a290_android_spring_2022"
+        android:textAlignment="center"
+        android:textColor="#0D47A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutButton"
+        app:layout_constraintVertical_bias="0.761" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

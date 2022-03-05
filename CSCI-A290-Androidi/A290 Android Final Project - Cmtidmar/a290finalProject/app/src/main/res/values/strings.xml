@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">a290finalProject</string>
+    <string name="title_activity_learn">learnActivity</string>
+    <string name="mainActivityTitle">Computer Science \n Flash Cards</string>
+    <string name="mainActivitySubTitle">cmtidmar-A290 Android Final Project</string>
+    <string name="playTitle">Play</string>
+    <string name="answer">answer</string>
+    <string name="show_answer">Show Answer</string>
+    <string name="learn">Learn</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="menu">menu</string>
+    <string name="show_question">Show Question</string>
+    <string name="submit">Submit</string>
+    <string name="question">question</string>
+    <string name="total_correct">Total Correct</string>
+    <string name="previous_answer">Previous Answer</string>
+
+
+</resources>
